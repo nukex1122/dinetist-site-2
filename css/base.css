@@ -166,7 +166,7 @@ iframe {
     display: inline-block;
 }
 ::-moz-selection {
-    background: #a68b7c;
+    background: #c43b30;
     color: #ffffff;
 }
 /* End reset & basics (Inspired by E. Meyers) */
@@ -262,7 +262,7 @@ p.lead {
     letter-spacing: 2px;
 }
 p.beige {
-    color: #a68b7c;
+    color: #c43b30;
     text-transform: capitalize;
     font-size: 13px;
 }
@@ -388,7 +388,7 @@ input[type]:-moz-placeholder {
 
 span a,
 p a {
-    color: #a68b7c;
+    color: #c43b30;
     position: relative;
 }
 p a:hover:after,
@@ -402,7 +402,7 @@ span a:hover:after {
 }
 span a:after,
 p a:after {
-    background-color: #a68b7c;
+    background-color: #c43b30;
     content: "";
     height: 1px;
     left: 0;
@@ -458,7 +458,7 @@ input[type="submit"] textarea,
     position: relative;
     color: #ffffff;
     padding: 13px 30px;
-    background: #a68b7c;
+    background: #c43b30;
     text-transform: uppercase;
     font-size: 11px;
 }

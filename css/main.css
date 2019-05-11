@@ -76,19 +76,19 @@
 }
 @keyframes spinner-color {
     0%, 100% {
-        stroke: #a68b7c;
+        stroke: #e44438;
     }
     20% {
         stroke: #353031;
     }
     40% {
-        stroke: #a68b7c;
+        stroke: #e44438;
     }
     60% {
         stroke: #353031;
     }
     80% {
-        stroke: #a68b7c;
+        stroke: #e44438;
     }
 }
 @keyframes spinner-dash {
@@ -366,10 +366,10 @@ h1.large {
     font-size: 60px;
     font-weight: 400;
     text-transform: none;
-    color: #a68b7c;
+    color: #e44438;
 }
 .block-price {
-    color: #a68b7c;
+    color: #e44438;
     font-weight: 700;
     display: block;
     font-size: 15px;
@@ -433,7 +433,7 @@ h1.large {
     background: rgba(187, 166, 154, 1);
 }
 .block-content.special.sp-1 {
-    background: #a68b7c;
+    background: #e44438;
 }
 .block-content.special.sp-2 {
     background: #b0988b;
@@ -524,7 +524,7 @@ input[type] {
     height: 40px;
 }
 input[type]:focus {
-    border: 1px solid #a68b7c;
+    border: 1px solid #e44438;
 }
 .ico-input {
     position: relative;
@@ -537,7 +537,7 @@ input[type]:focus {
     top: 40px;
 }
 .submit {
-    background: #a68b7c;
+    background: #e44438;
     cursor: pointer;
     position: relative;
     width: 100%;
@@ -594,8 +594,8 @@ input.error {
     text-align: center;
 }
 .block-social a {
-    border: 2px solid #a68b7c;
-    color: #a68b7c;
+    border: 2px solid #e44438;
+    color: #e44438;
     display: inline-block;
     height: 42px;
     width: 42px;
