@@ -369,7 +369,7 @@ h1.large {
     color: #e44438;
 }
 .block-price {
-    color: #e44438;
+    color: #858585;
     font-weight: 700;
     display: block;
     font-size: 15px;
@@ -961,6 +961,11 @@ input.error {
     .flex-direction-nav a {
         display: none;
     }
+    .hoola a{
+      display: block;
+        margin: 0 5%;
+    }
+
     .block-content.special {
         padding:50px 100px 50px 40px !important;
     }

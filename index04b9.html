@@ -19,6 +19,7 @@
 	  <link href="https://fonts.googleapis.com/css?family=Kristi" rel="stylesheet">
 	  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	  <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee" rel="stylesheet">
 	   </head>
    <body>
       <!-- Preloader -->
@@ -73,14 +74,71 @@
             </header>
             <!--End header-->
             <!--Inner hero-->
+            <style>
+            .large-2{
+              font-size: 5.5em !important;
+              font-weight: 700 !important;
+              text-transform: uppercase !important;
+              letter-spacing: 2px;
+              font-family: "Lora", "Georgia", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+            }
+
+
+
+
+            .punjabi{
+              font-family: 'Mukta Mahee', sans-serif;
+              font-size: 2.5em;
+              margin-top: -10px;
+              margin-bottom: 5px;
+            }
+
+            .img-shadow{
+              -webkit-box-shadow: 0px 10px 15px 5px rgba(0,0,0,0.49);
+              -moz-box-shadow: 0px 10px 15px 5px rgba(0,0,0,0.49);
+              box-shadow: 0px 10px 15px 5px rgba(0,0,0,0.49);
+            }
+
+            @media screen and (max-width: 500px) {
+              .large-2{
+                font-size: 3.5em !important;
+              }
+              .punjabi{
+                font-size: 1.5em;
+                margin-top: -5px;
+              }
+
+              .mb-100{
+                  margin-bottom: 30px !important;
+              }
+            }
+            </style>
             <div class="inner-hero">
                <!--Container-->
                <div class="container hero-content">
                   <!--Row-->
-                  <div class="row">
+                  <div class="row" style="margin-top:3%">
                      <div class="col-sm-12 text-center">
-                        <h1 class="large" >Hall Gate</h1>
+                        <h1 class="large large-2"  >Hall Gate</h1>
+                        <p class="punjabi">
+                          ਹਾਲ ਗੇਟ
+                        </p>
                         <p class="lead">Taste of Amritsar</p>
+                        <div class="row" style="margin-top:5%;">
+                          <div class="col-sm-6 col-sm-offset-3 ">
+                             <div class="block-img img-shadow">
+                                <div class="background-img">
+                                   <img src="img/map.png" alt="">
+                                </div>
+                             </div>
+                          </div>
+                        </div>
+
+                        <br />
+                        <div class="row">
+                          <p class="large" style="letter-spacing: 1px;margin-top:10px;font-weight:500;text-transform:uppercase">"Bringing the classic flavors to your doorstep"</p>
+                        </div>
+
 
                      </div>
                   </div>
@@ -145,9 +203,9 @@
             <!-- As a general rule, include a heading (h1-h6) as a child of each section and article element for screen readers purposes-->
             <h2 class="indent">Gallery</h2>
             <!--Gallery slider-->
-            <div class="gallery-slider slider flexslider">
+            <div class="gallery-slider slider flexslider hoola">
                <ul class="slides">
-                  <li>
+                  <li >
                      <div class="background-img zoom">
                         <img src="img/11.jpg" alt="">
                      </div>
@@ -201,14 +259,19 @@
             </div>
             <!--End container-->
             <!--Container-->
+            <style>
+            .block-content-menu p{
+              color:#e44438 ;
+            }
+            </style>
             <div class="container">
                <!--Row-->
                <div class="row">
-                  <ul class="block-tab mt-40">
+                  <ul class="block-tab mt-40 block-content-menu">
                      <!--Menu list-->
                      <li class="active block-list">
-                        <div class="col-sm-6  col-sm-offset-3 text-center">
-                           <div class="block-content pb-25 mb-25">
+                        <div class="col-sm-6  col-sm-offset-3 text-center ">
+                           <div class="block-content pb-25 mb-25 ">
                               <h2 class="mb-5 ">Classic Aloo Bun Tikki </h2>
                               <p>Street side flavoured tikkis layered with onion, imly and mint chutney.</p>
                               <span class="block-price">Rs. 125</span>
