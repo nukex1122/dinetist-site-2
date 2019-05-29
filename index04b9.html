@@ -170,7 +170,7 @@
                   <div class="col-md-5 col-sm-5 ">
                      <div class="block-img ">
                         <div class="background-img">
-                           <img src="img/4.jpg" alt="">
+                           <img src="img/14.jpg" alt="">
                         </div>
                      </div>
                   </div>
@@ -194,38 +194,6 @@
          </section>
          <!--End resto section-->
          <!--Short reservation section-->
-         <!--Gallery section-->
-         <section id="gallery" class="gallery overlay">
-            <!-- As a general rule, include a heading (h1-h6) as a child of each section and article element for screen readers purposes-->
-            <h2 class="indent">Gallery</h2>
-            <!--Gallery slider-->
-            <div class="gallery-slider slider flexslider hoola">
-               <ul class="slides">
-                  <li >
-                     <div class="background-img zoom">
-                        <img src="img/11.jpg" alt="">
-                     </div>
-                  </li>
-                  <li>
-                     <div class="background-img zoom">
-                        <img src="img/12.jpg" alt="">
-                     </div>
-                  </li>
-                  <li>
-                     <div class="background-img zoom">
-                        <img src="img/2.jpg" alt="">
-                     </div>
-                  </li>
-                  <li>
-                     <div class="background-img zoom">
-                        <img src="img/7.jpg" alt="">
-                     </div>
-                  </li>
-               </ul>
-            </div>
-            <!--End gallery slider-->
-         </section>
-         <!--End gallery section-->
          <!--End short reservation section-->
          <!--Menu section-->
          <section id="menu" class="menu pt-120 pb-120 " style="background-color: #bc685d;color:#fff!important">
@@ -278,6 +246,12 @@
               color:#fff ;
             }
             </style>
+            <style>
+             .damn-serif-heading{
+                 font-size: 2.5em !important;
+                     font-family: "Lora", "Georgia", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+             }
+            </style>
             <div class="container">
                <!--Row-->
                <div class="row">
@@ -306,10 +280,12 @@
 
                      </li>
                      <!--Menu list-->
+
+
                      <li class=" block-list">
                         <div class="col-sm-5  col-sm-offset-1 text-center">
                            <div class="block-cat">
-                              <h2 class="mb-30">Vegetarian </h2>
+                              <h2 class="mb-30 damn-serif-heading">Vegetarian </h2>
                            </div>
                            <div class="block-content pb-25 mb-25">
                               <h2 class="mb-5 ">Soya Chaap Tikka </h2>
@@ -349,7 +325,7 @@
                         </div>
                         <div class="col-sm-5 text-center ">
                            <div class="block-cat">
-                              <h2 class="mb-30">Non Vegetarian  </h2>
+                              <h2 class="mb-30 damn-serif-heading">Non Vegetarian  </h2>
                            </div>
                            <div class="block-content  pb-25 mb-25">
                               <h2 class="mb-5 ">Chicken Chaap </h2>
@@ -387,7 +363,7 @@
                      <li class=" block-list">
                         <div class="col-sm-5  col-sm-offset-1 text-center">
                            <div class="block-cat">
-                              <h2 class="mb-30">Vegetarian </h2>
+                              <h2 class="mb-30 damn-serif-heading">Vegetarian </h2>
                            </div>
                            <div class="block-content pb-25 mb-25">
                               <h2 class="mb-5 ">Dal Bakhura </h2>
@@ -422,7 +398,7 @@
                         </div>
                         <div class="col-sm-5 text-center ">
                            <div class="block-cat">
-                              <h2 class="mb-30">Non Vegetarian </h2>
+                              <h2 class="mb-30 damn-serif-heading">Non Vegetarian </h2>
                            </div>
                            <div class="block-content  pb-25 mb-25">
                              <h2 class="mb-5 ">Tawa Chicken </h2>
@@ -509,6 +485,161 @@
          </section>
          <!--End menu section-->
          <!--Review section-->
+
+         <!--Gallery section-->
+         <style>
+
+
+
+            /* Create three equal columns that floats next to each other */
+            .column {
+              float: left;
+              width: 33.33%;
+              display: none; /* Hide columns by default */
+              margin-bottom: 10px;
+              text-align: center;
+              font-size: 1.2em;
+            }
+            @media screen and (max-width: 500px) {
+              .column {
+                width: 50%;
+              }
+            }
+
+            /* Clear floats after rows */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+
+            /* Content */
+            .content {
+              background-color: white;
+              padding: 10px;
+            }
+
+            /* The "show" class is added to the filtered elements */
+            .show {
+              display: block;
+            }
+
+            /* Style the buttons */
+            .btn {
+              border: none;
+              outline: none;
+              padding: 12px 16px;
+              background-color: white;
+              cursor: pointer;
+            }
+
+            /* Add a grey background color on mouse-over */
+            .btn:hover {
+              background-color: #ddd;
+            }
+
+            /* Add a dark background color to the active button */
+            .btn.active {
+              background-color: #666;
+               color: white;
+            }
+
+            .content h4{
+              margin-top: 10px;
+            }
+
+         </style>
+         <section id="gallery" class="pt-120">
+            <!-- As a general rule, include a heading (h1-h6) as a child of each section and article element for screen readers purposes-->
+            <div class="row">
+               <div class="col-sm-12  mb-100 text-center">
+                  <h1 class="title">Gallery</h1>
+               </div>
+            </div>
+            <!--Gallery slider-->
+
+            <!-- Portfolio Gallery Grid -->
+            <div class="container" style="margin-bottom:60px;">
+              <div id="myBtnContainer" style="margin:0 auto;text-align:center;margin-bottom:20px">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+                <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+                <button class="btn" onclick="filterSelection('people')"> People</button>
+              </div>
+
+              <div class="row">
+                <div class="column nature">
+                  <div class="content">
+                    <img src="img/2.jpg" alt="Mountains" style="width:100%">
+                    <h4>Mountains</h4>
+
+                  </div>
+                </div>
+                <div class="column nature">
+                  <div class="content">
+                    <img src="img/3.jpg" alt="Lights" style="width:100%">
+                    <h4>Lights</h4>
+
+                  </div>
+                </div>
+                <div class="column nature">
+                  <div class="content">
+                    <img src="img/5.jpg" alt="Nature" style="width:100%">
+                    <h4>Forest</h4>
+
+                  </div>
+                </div>
+
+                <div class="column cars">
+                  <div class="content">
+                    <img src="img/13.jpg" alt="Car" style="width:100%">
+                    <h4>Retro</h4>
+
+                  </div>
+                </div>
+                <div class="column cars">
+                  <div class="content">
+                    <img src="img/7.jpg" alt="Car" style="width:100%">
+                    <h4>Fast</h4>
+
+                  </div>
+                </div>
+                <div class="column cars">
+                  <div class="content">
+                    <img src="img/8.jpg" alt="Car" style="width:100%">
+                    <h4>Classic</h4>
+
+                  </div>
+                </div>
+
+                <div class="column people">
+                  <div class="content">
+                    <img src="img/9.jpg" alt="People" style="width:100%">
+                    <h4>Girl</h4>
+
+                  </div>
+                </div>
+                <div class="column people">
+                  <div class="content">
+                    <img src="img/10.jpg" alt="People" style="width:100%">
+                    <h4>Man</h4>
+
+                  </div>
+                </div>
+                <div class="column people">
+                  <div class="content">
+                    <img src="img/11.jpg" alt="People" style="width:100%">
+                    <h4>Woman</h4>
+
+                  </div>
+                </div>
+              <!-- END GRID -->
+              </div>
+            </div>
+            <!--End gallery slider-->
+         </section>
+         <!--End gallery section-->
+
          <section class="review pt-120 pb-120 overlay">
             <div class="background-img zoom" >
                <img src="img/6.jpg" alt="">
@@ -650,7 +781,7 @@
                            Dear guests, you are welcomed to dine with us at Hall Gate.
                            Have a pleasant dining experience.
                            <br><br>
-                           Address  - 1309 <br />
+
                            Sector 34-C , Chandigarh<br><br>
                            Phone: +91 95691 49285 <br>
                            Phone: +91 98100 35442<br>
@@ -681,6 +812,56 @@
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbGQXiGt-6UAmOFFdSzYI-byeE7ewBuVM&amp;callback=initializeMap"></script>
       <!-- Google analytics -->
       <!-- End google analytics -->
+
+      <script>
+      filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
    </body>
 
 <!-- Mirrored from mutationmedia.net/TASTY/?storefront=envato-elements by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 May 2019 07:25:18 GMT -->
