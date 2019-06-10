@@ -12,10 +12,14 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Css -->
       <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+      <link rel="stylesheet" href="thumbnail-gallery.css">
       <link href="css/base.css" rel="stylesheet" type="text/css" media="all"/>
       <link href="css/main.css" rel="stylesheet" type="text/css" media="all"/>
       <link href="css/flexslider.css" rel="stylesheet" type="text/css"  media="all" />
       <link href="css/fonts.css" rel="stylesheet" type="text/css"  media="all" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 	  <link href="https://fonts.googleapis.com/css?family=Kristi" rel="stylesheet">
 	  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	  <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
@@ -36,7 +40,7 @@
       <!--Wrapper-->
       <div class="wrapper">
          <!--Hero section-->
-         <section class="hero overlay">
+         <section class="hero">
             <!--Main slider-->
             <div class="main-slider slider flexslider">
                <ul class="slides">
@@ -178,7 +182,7 @@
                   <div class="col-md-5 col-sm-5 ">
                      <div class="block-img " style="height:400px">
                         <div class="background-img">
-                           <img src="img/14.jpeg" alt="">
+                           <img src="img/14 copy.jpg" alt="">
                         </div>
                      </div>
                   </div>
@@ -567,81 +571,114 @@
             <!--Gallery slider-->
 
             <!-- Portfolio Gallery Grid -->
-            <div class="container" style="margin-bottom:60px;">
-              <!--div id="myBtnContainer" style="margin:0 auto;text-align:center;margin-bottom:20px">
-                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-                <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-                <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-                <button class="btn" onclick="filterSelection('people')"> People</button>
-              </div-->
+            <div class="container">
 
-              <div class="row">
-                <div class="column nature">
-                  <div class="content">
-                    <img src="img/2.jpg" alt="Aloo bun tikki" style="width:100%">
-                    <h4>Aloo bun tikki</h4>
 
+              <div class="tz-gallery">
+
+                  <div class="row">
+
+                      <div class="col-sm-6 col-md-4">
+                          <div class="thumbnail">
+                              <a class="lightbox" href="../images/park.jpg">
+                                  <img src="img/2.jpg" alt="Aloo bun tikki">
+                              </a>
+                              <div class="caption">
+                                  <h3>Aloo bun tikki</h3>
+                                  <p style="line-height: 14px;">Street side flavoured tikkis layered with onion, imly and mint chutney.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                          <div class="thumbnail">
+                              <a class="lightbox" href="../images/coast.jpg">
+                                  <img src="img/13.jpg" alt="Dal Bhukhara">
+                              </a>
+                              <div class="caption">
+                                  <h3>Dal Bhukhara</h3>
+                                  <p style="line-height: 14px;">Slow cooked dal which has a rich and creamy texture.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                          <div class="thumbnail">
+                              <a class="lightbox" href="../images/traffic.jpg">
+                                  <img src="img/8.jpg" alt="Kadhai Chicken">
+                              </a>
+                              <div class="caption">
+                                  <h3>Kadhai Chicken</h3>
+                                  <p style="line-height: 14px;">Rich gravy blended with Indian spices, fried onions & capsicums.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                          <div class="thumbnail">
+                              <a class="lightbox" href="../images/traffic.jpg">
+                                  <img src="img/9.jpg" alt="Tandoori Chicken">
+                              </a>
+                              <div class="caption">
+                                  <h3>Tandoori Chicken</h3>
+                                  <p style="line-height: 14px;">Marinated with 18 ingredients. Chef's Special.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                          <div class="thumbnail">
+                              <a class="lightbox" href="../images/traffic.jpg">
+                                  <img src="img/10.jpg" alt="Soya Chaap" >
+                              </a>
+                              <div class="caption">
+                                  <h3>Soya Chaap</h3>
+                                  <p style="line-height: 14px;">Marinated with tandoori masala, embibing a spicy hot flavor.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                          <div class="thumbnail">
+                              <a class="lightbox" href="../images/traffic.jpg">
+                                  <img src="img/11.jpg" alt="Butter Chicken">
+                              </a>
+                              <div class="caption">
+                                  <h3>Butter Chicken</h3>
+                                  <p style="line-height: 14px;">Sinfully creamy dish in a butter based gravy, seasoned with mild spices.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                          <div class="thumbnail">
+                              <a class="lightbox" href="../images/bridge.jpg">
+                                  <img src="img/3.jpg" alt="Malai Paneer tikka">
+                              </a>
+                              <div class="caption">
+                                  <h3>Malai Paneer tikka</h3>
+                                  <p style="line-height: 14px;">Marinated with secret spices. Chef's Special.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                          <div class="thumbnail">
+                              <a class="lightbox" href="../images/tunnel.jpg">
+                                  <img src="img/5.jpg" alt="Fruit Cream">
+                              </a>
+                              <div class="caption">
+                                  <h3>Fruit Cream</h3>
+                                  <p style="line-height: 14px;">Made with fresh fruits with a hint of Coconut.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                          <div class="thumbnail">
+                              <a class="lightbox" href="../images/rails.jpg">
+                                  <img src="img/7.jpg" alt="Chicken Chaap">
+                              </a>
+                              <div class="caption">
+                                  <h3>Chicken Chaap</h3>
+                                  <p style="line-height: 14px;">Chicken cutlet made with Indian Spices.</p>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
-                <div class="column nature">
-                  <div class="content">
-                    <img src="img/3.jpg" alt="Malai Paneer tikka" style="width:100%">
-                    <h4>Malai Paneer tikka</h4>
 
-                  </div>
-                </div>
-                <div class="column nature">
-                  <div class="content">
-                    <img src="img/5.jpg" alt="Fruit Cream" style="width:100%">
-                    <h4>Fruit Cream</h4>
-
-                  </div>
-                </div>
-
-                <div class="column cars">
-                  <div class="content">
-                    <img src="img/13.jpg" alt="Dal Bhukhara" style="width:100%">
-                    <h4>Dal Bhukhara</h4>
-
-                  </div>
-                </div>
-                <div class="column cars">
-                  <div class="content">
-                    <img src="img/7.jpg" alt="Chicken Chaap" style="width:100%">
-                    <h4>Chicken Chaap</h4>
-
-                  </div>
-                </div>
-                <div class="column cars">
-                  <div class="content">
-                    <img src="img/8.jpg" alt="Kadhai Chicken" style="width:100%">
-                    <h4>Kadhai Chicken</h4>
-
-                  </div>
-                </div>
-
-                <div class="column people">
-                  <div class="content">
-                    <img src="img/9.jpg" alt="Tandoori Chicken" style="width:100%">
-                    <h4>Tandoori Chicken</h4>
-
-                  </div>
-                </div>
-                <div class="column people">
-                  <div class="content">
-                    <img src="img/10.jpg" alt="Soya Chaap" style="width:100%">
-                    <h4>Soya Chaap</h4>
-
-                  </div>
-                </div>
-                <div class="column people">
-                  <div class="content">
-                    <img src="img/11.jpg" alt="Butter Chicken" style="width:100%">
-                    <h4>Butter Chicken</h4>
-
-                  </div>
-                </div>
-              <!-- END GRID -->
               </div>
             </div>
             <!--End gallery slider-->
@@ -869,7 +906,13 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+
 </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  <script>
+      baguetteBox.run('.tz-gallery');
+  </script>
    </body>
 
 <!-- Mirrored from mutationmedia.net/TASTY/?storefront=envato-elements by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 May 2019 07:25:18 GMT -->
